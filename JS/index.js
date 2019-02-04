@@ -1,0 +1,1 @@
+(function(e){var t=e.$,n=e.kureicp;n.mobile.getliveinfo="/int/getautozqlqdc",t(function(){t.ajax({url:n.mobile.getliveinfo,data:{id:888894},dataType:"json",success:function(e){e&&t.trim(e[0])&&t(".live-zq").html(e[0])}}),t.ajax({url:n.mobile.getliveinfo,data:{id:888895},dataType:"json",success:function(e){e&&t.trim(e[0])&&t(".live-lq").html(e[0])}})})})(window);

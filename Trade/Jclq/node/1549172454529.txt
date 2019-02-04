@@ -1,0 +1,6 @@
+ <font face="Arial" size=2>
+<p>Microsoft JScript ����ʱ����</font> <font face="Arial" size=2>���� '800a138f'</font>
+<p>
+<font face="Arial" size=2>'onecase.0.Num' Ϊ�ջ��Ƕ���</font>
+<p>
+<font face="Arial" size=2>/Trade/Jclq/Prize/lqzd.asp</font><font face="Arial" size=2>���� 25</font> 

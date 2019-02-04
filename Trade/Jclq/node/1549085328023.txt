@@ -1,0 +1,6 @@
+ <font face="Arial" size=2>
+<p>Microsoft JScript ����ʱ����</font> <font face="Arial" size=2>���� '800a138f'</font>
+<p>
+<font face="Arial" size=2>'null' Ϊ�ջ��Ƕ���</font>
+<p>
+<font face="Arial" size=2>/Trade/Jclq/Prize/Lib/Jclq.asp</font><font face="Arial" size=2>���� 47</font> 

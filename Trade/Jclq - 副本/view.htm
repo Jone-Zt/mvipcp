@@ -1,0 +1,263 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="GBK">
+	<meta name="keywords" content="开奖_号码预测推荐_走势图_网站系统触屏版"/>
+	<meta name="description" content="网站系统是手机上最好的投注平台，10年游戏金牌服务经验，为游戏朋友提供安全的手机游戏投注、游戏合玩服务、游戏资讯"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>方案详情-网站系统</title>
+	<link href="/Css/basic.css" rel="stylesheet">
+	<link href="/trade/css/jczq/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/template.js"></script>
+	<script language="javascript" type="text/javascript" src="/JS/Jquery-1.7.2.Min.js"></script>
+</head>
+<body>
+	<div class="head">
+		<h2 onClick="javascript:upcss();" id="navtit"><em id="jiangaa"><h1>方案详情</h1></em></h2>
+		<a href="javascript:history.go(-1)" class="btn-qgkj" id="sourceUrl"><span><em></em></span>返回</a>
+	</div>
+	<div class="main">
+		
+        
+	</div>
+	<script>
+	template.helper("DeCode",function(str){
+	    return unescape(str);
+	})
+	template.helper("ShowQiHao",function(qihao){
+	    var nian = qihao.substr(0,4)+"/"+qihao.substr(4,2)+"/"+qihao.substr(6,2);
+		var week = new Date(nian).getDay();
+		var wx   = ["周日","周一","周二","周三","周四","周五","周六"];
+		return wx[week]+qihao.substr(-3,3);
+	})
+	template.helper("ShowBetCode",function(a,b,c){
+	   var aa = a.split(","),cc=c.split(",");
+	   var  str = "";
+	   var pv   = {"a":"sheng","b":"fu","c":"fencha","d":"bifen"}; 
+	   var kv = {"a1":"主胜","a2":"客胜","b1":"让主胜","b2":"让客胜","c1":"大分差","c2":"小分差","d01":"(主)1-5","d11":"(客)1-5","d02":"(主)6-10","d12":"(客)6-10","d03":"(主)11-15","d13":"(客)11-15","d04":"(主)16-20","d14":"(客)16-20","d05":"(主)21-25","d15":"(客)21-25","d06":"(主)26+","d16":"(客)26+"};
+	      str += "<span ></span>"
+	   for( var i=0 ; i < aa.length ; i++ ){
+		  var cs = a.substr(0,1); 
+		  var bool = b.indexOf(aa[i])>= 0 ?  '['+cc[i]+']' : '';
+		  str += '<span class="'+pv[cs]+'">'+kv[aa[i]]+bool+'</span>';  
+	   }
+	   return str ;
+	})
+	template.helper("FormatDate",function(datastr,str){
+		 var d = datastr == null ? new Date() : new Date(datastr);
+		 var temm = {
+			 "Y" : d.getFullYear(),
+			 "m" : (d.getMonth()+1) > 9 ? d.getMonth()+1 : "0"+(d.getMonth()+1),
+			 "d" : d.getDate() > 9 ? d.getDate():"0"+d.getDate(),
+			 "H" : d.getHours()> 9 ? d.getHours() : "0"+d.getHours(),
+			 "i" : d.getMinutes() > 9 ?　d.getMinutes(): "0"+d.getMinutes(),
+			 "s" : d.getSeconds() > 9 ?  d.getSeconds() : "0"+d.getSeconds() 
+		 }
+		 for( var indexs in temm ){
+		   str = str.replace(indexs,temm[indexs]);
+		 }
+		 return str ;
+	})
+	template.helper("showResult",function(code){
+		//a2~1.24|b1~1.75|c1~1.69|d03~5.1
+		if ( code == "" ) return "<span>未开奖</span>";
+		var kv = {"a1":"主胜","a2":"客胜","b1":"让分主胜","b2":"让分客胜","c1":"大分差","c2":"小分差","d01":"(主)1-5","d11":"(客)1-5","d02":"(主)6-10","d12":"(客)6-10","d03":"(主)11-15","d13":"(客)11-15","d04":"(主)16-20","d14":"(客)16-20","d05":"(主)21-25","d15":"(客)21-25","d06":"(主)26+","d16":"(客)26+"};
+		var pv   = {"a":"sheng","b":"fu","c":"fencha","d":"bifen"}; 
+	   var cc = code.split("|");
+	   var str  = "";
+	   for( var index in cc ){
+	      var dd = cc[index].split("~");
+		  var pp = dd[0].substr(0,1);
+		  str  += "<span class='"+pv[pp]+"'>"+kv[dd[0]]+"</span>";
+	   }
+	   return str ;
+	})
+	 $(function(){
+		$(".btn_hm_buy").click(function(){
+			var _this = this;
+				JclqHm({
+	                id:$(_this).data("id"),
+	                money:$(".lot_gd_input input").val(),
+	                action:"buy"
+	            })
+		});
+		$(".lot_gd_input input").keyup(function(){
+			var am=18*$(".lot_gd_input input").val();
+			$("#am").html(am);
+		});
+		
+
+})
+ var JclqHm = function(buydata){
+       $.ajax(
+	      {
+		     type:"post",
+			 dataType:"json",
+			 url :"/Trade/Jclq/data/GroupBuy.asp",
+			 data:{pt:JSON.stringify(buydata)},
+			 success:function(data){
+			   alert(data.msg);
+			   if(data.code == 1){
+			      window.location.href="/User/";
+			   }
+			 } 
+		  }  
+	   ); 	
+	}   
+
+
+var t;
+$(document).ready(function() {
+	$(document).find(".lot_context").eq(0).click();
+	//drawProcess();
+	var href = window.location.href.split("?");
+	href     =  href[1].split("=")[1];
+	$.get("/Trade/Jclq/data/view.asp",{id:href,t:new Date().getTime()},function(data){
+	   var html = template("artdetail",{data:data});
+	   i        = data["jindu"];
+	   document.querySelector(".main").innerHTML = html;
+	   setTimeout(function(){
+	      $(document).find("#gdlbc").click(function(){
+			$("#gdlb").hide();
+			$(".lot_context").eq(0).click();
+		 });
+		 $(document).find("#gdlbs").click(function(){
+			$("#gdlb").show();
+		 });
+		 $(document).find(".lot_context").click(function(){
+			var $this = $(this);
+			var h = $this.find('.lot_view').innerHeight();
+			if($this.hasClass('lot_view_show')){
+				$this.removeClass('lot_view_show').css("height","-="+h+"px").find(">.lot_open span").css("transform","rotate(0)");
+			}else{
+				$this.addClass('lot_view_show').css("height","+="+h+"px").find(">.lot_open span").css("transform","rotate(450deg)");
+			}
+		 });
+		 drawProcess();
+	     t = setInterval(function(){addNum(data["jindu"])},60);
+		 $(".btn_hm_buy").click(function(){
+			var _this = this;
+				JclqHm({
+	                id:$(_this).data("id"),
+	                money:$(".lot_HM_input input").val(),
+	                action:"buy"
+	            })
+		});
+	   },1000)
+	},'json');
+});
+function addNum(jindu) {
+	if(i<=jindu - 1){
+		i++;
+		$('canvas.process').text(i+"%");drawProcess();
+	}else{
+		clearInterval(t);
+	}
+}
+function drawProcess() {  
+    $('canvas.process').each(function() {
+        var text = $(this).text();
+        var process = text.substring(0, text.length-1);   
+        var canvas = this;
+		var w = 80;
+		var h = 80;
+		canvas.width = w*2;
+		canvas.height = w*2;
+        var context = canvas.getContext('2d');
+        context.clearRect(0, 0, w*2, h*2);  
+        context.beginPath();  
+        context.moveTo(w, h);  
+        context.arc(w, h, w, 0, Math.PI * 2, false);  
+        context.closePath();  
+        context.fillStyle = '#ddd';  
+        context.fill();  
+        context.beginPath();  
+
+        context.moveTo(w, h);    
+        context.arc(w, h, w, Math.PI*1.5, 10000*(Math.PI * 1.5 + Math.PI * 2 * process / 100)/9999, false);  
+        context.closePath();  
+        context.fillStyle = '#FF0206';  
+        context.fill();   
+        context.beginPath();  
+        context.moveTo(w, h);  
+        context.arc(w, h, w-20, 0, Math.PI * 2, true);  
+        context.closePath();  
+        context.fillStyle = 'rgba(255,255,255,1)';  
+        context.fill();  
+        context.beginPath();  
+        context.arc(w, h, w-21, 0, Math.PI * 2, true);  
+        context.closePath();  
+        context.strokeStyle = '#ddd';  
+        context.stroke();  
+        context.font = "bold 25pt Arial";  
+        context.fillStyle = '#FF0206';  
+        context.textAlign = 'center';  
+        context.textBaseline = 'middle';  
+        context.moveTo(w, h);  
+        context.fillText(text, w, h);  
+    });
+}
+function AddNum(){
+   
+}
+</script>
+</body>
+</html>
+
+<script type="text/html" id="artdetail">
+ <div class="lot_open">方案详情>竞彩篮球-混投</div>
+        <div class="lot_nav"><div class="lot_user">发起人：test***</div><div class="lot_user">{{data["state"]}}</div></div>
+		<div class="lot_nav" style="text-align: center;">
+			<div class="lot_pol">
+				<canvas class='process' style='width:80px;height:80px;transform:scale(0.7);'>{{data["jindu"]}}%</canvas>
+			</div>
+			<div class="lot_overtime">
+				<div class="lot_word">方案截止时间</div>
+				<div class="lot_date">{{data["dealtime"]}}</div>
+			</div>
+			<div class="lot_state"><div>{{data["total"]}}彩金</div><div class="lot_bd">保底 <span>{{data["bd"]}}</span> 份</div></div>
+			<div class="lot_HM_Buy"><span class="lot_tc">提成：{{data["tc"]}}%</span>
+			{{if data['state']=="进行中" && data['jindu'] < 100 }}
+			<span class="lot_HM_input"><input type="text" placeholder="剩余{{data["sy"]}}份" value="1"><button data-id="{{data["id"]}}" class="btn_hm_buy">投注</button></span>
+			{{else}}
+			 <span class="lot_HM_input">已截止</span>
+			{{/if}}
+			</div>
+		</div>
+		<div class="lot_context">
+			<div class="lot_open">点击展开投注内容<span></span></div>
+			<div class="lot_view">
+			   {{each data["code"] as objs}}	
+				<div class="lot_title"><span class="lot_week">{{ShowQiHao(objs["qihao"])}}</span>{{ DeCode(objs["title"][0])}}<span style="font-size:12px;">VS</span>{{ DeCode(objs["title"][1])}}</div>
+				<div class="lot_text">
+				   {{=ShowBetCode(objs["bet"],objs["open"],objs["betsp"])}}
+				 </div>
+				 {{/each}}
+			<div>发起时间：{{data.deadtime}}</div>
+			</div>
+		</div>
+		<div class="lot_context" style="height: 36px;">
+			<div class="lot_open">点击展开彩果详情<span></span></div>
+			<div class="lot_view">
+				<div class="lot_text lot_over_title"><span>胜负</span><span>让分胜负</span><span>大小分</span><span>胜分差</span></div>
+				{{each data["code"] as ds}}
+				<div class="lot_title"><span class="lot_week">{{ShowQiHao(ds["qihao"])}}</span>{{ DeCode(ds["title"][0])}} <span style="font-size:12px;">VS</span>{{ DeCode(ds["title"][1])}}</div>
+				<div class="lot_text lot_over">{{=showResult(ds["open"])}}</div>
+				{{/each}}
+			</div>
+		</div>
+		<div class="lot_context" style="height: 36px;">
+			<div class="lot_open">点击展开参与人({{data['count']}}人)<span></span></div>
+			<div class="lot_view">
+				<div class="lot_all_user">
+					<div class="lot_all_user_title"><span>用户名</span><span>投注份数</span><span>投注时间</span></div>
+					<div class="lot_all_user_out">
+						{{each data["canyu"] as ob}}
+						 <div class="lot_all_user_list"><span>{{ob.UserName.substring(0,2)}}***</span><span>{{ob.Hnumber}}</span><span>{{=FormatDate(ob.addtime,'m-d H:i')}}</span></div>
+						{{/each}}
+					</div>
+				</div>
+			</div>
+		</div>
+</script>

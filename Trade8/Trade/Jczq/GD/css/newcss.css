@@ -1,0 +1,48 @@
+@charset "gb2312";
+@font-face {
+  font-family: 'iconfont';  /* project id 902709 */
+  src: url('//at.alicdn.com/t/font_902709_776kcjxdtrs.eot');
+  src: url('//at.alicdn.com/t/font_902709_776kcjxdtrs.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_902709_776kcjxdtrs.woff') format('woff'),
+  url('//at.alicdn.com/t/font_902709_776kcjxdtrs.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_902709_776kcjxdtrs.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+html,body{ margin:0rem; padding:0rem;}
+h1,p,ul,li,dl,dt,dd{ padding:0rem; margin:0rem; list-style:none;}
+#header {
+    height: 2rem;
+    background: #66ccff;
+    color: #fff;
+    position:fixed;
+    z-index: 12;
+    text-align: center;
+    border: 0;
+	top:0rem; 
+	left:0rem;
+	width:100%;
+}
+#header li{ width:33%; float:left; height:2rem; line-height:2rem;}
+#header li:first-child{ font-size:.8rem;}
+#header a{ text-decoration:none; color:#FFF;}
+
+.faqiren{ height:1.2rem; line-height:1.2rem;font-size:.7rem; margin:95%; margin: 0rem auto;}
+.faqiren span { width:50%; display:inline-block; float:left;}
+.matchbox{ height:3rem; border-radius:5px; border:2px solid #d6d6d6; width:98%; margin:0rem auto; font-size:.6rem;}
+.matchbox td{  text-align:center;}
+.gdbtn{ font-size:.7rem; color:#FFF; border-radius:8px; padding:.2rem .4rem; display:inline-block; text-align:center; background:#66ccff; text-decoration:none;}
+.data-list{ padding-top:2rem; overflow:scroll;}
+.mybuy{ width:100%; height:100%; position:fixed;left:0rem; top:0rem; background:rgba(0,0,0,0.2)}
+.alert-box{ width:80%; height:10rem; background:#FFF; margin:5rem auto; border-radius:4px;}
+.title{ height:1.5rem; background:#633; color:#FFF; font-size:.7rem; line-height:1.5rem; border-radius: 4px 4px 0px 0px; padding:0rem .4rem;}
+.betBox{ width:100%; font-size:.6rem; background:#d6d6d6;}
+.betBox th{ height:1.2rem; line-height:1.2rem; background:#f0f0f0;}
+.betBox td{ height:1.2rem; line-height:1.2rem; background:#FFFFFF;}
+.btn-gd{ width:8rem; line-height:1.5rem; height:1.5rem; text-align:center; color:#FFF; background:#FF0000; border:none; margin:.2rem 2rem;}
+.beishu{ text-align:center; height:1rem; line-height:1rem; width:3rem; }

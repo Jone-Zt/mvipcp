@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.zsblock1{ background:#fff; width: 100%; display: inline-block;  overflow: hidden;}
+.zsblock1 ul{ border:1px solid #cdcdcd; width: 30px; display:block; float:left;}
+.zsblock1 ul li{ font-size:12px; height:24px; line-height:24px; padding:3px 1px; width: auto;}
+.zsblock1 ul li:nth-child(2n){ background:#f3f3f3; text-align:center;}
+
+.zsTable { font-size:16px; text-align:center; font-family:tahoma; float:left;}
+.zsTable th{ font-weight:normal; padding:0 5px; font-size:12px;  border:1px solid #cdcdcd; border-left:none; background:#f3f3f3; height:26px; line-height:26px;}
+.zsTable td{ margin:0 2px; font-size:12px; border-right:1px solid #cdcdcd; height:24px; line-height:24px; border-bottom:1px solid #cdcdcd; color:#999;}
+.redBall{ width:21px; height:21px; border-radius:50%; background:#ec524c; display: block; margin:auto; color:#fff; line-height:21px;}
+
+.tab1{ width:100%; background:#fff; display:inline-block;}
+.tab1 a{ height:40px; line-height:40px; font-size:.8rem; width:33%; text-align:center; display:block; float: left; border:1px solid #dcdcdc; border-right:none; margin:auto;}
+.tab1 a:hover{background:#ec524c; color:#fff;}
+.tab1 .current{background:#ec524c; color:#fff;}
+.tab1 a:first-child{ border-left:none;}
+.zsnotic{ font-size:.7rem;}
+.blueBall{width:21px; height:21px; border-radius:50%; background:#56c9ff; display: block; margin:auto; color:#fff; line-height:21px;}
+.tb-k span{ padding:0 10px;}
+.orangebg{ width:100%; height:100%; background:#fea843; color:#fff; display:block;}
+.greenbg{ width:100%; height:100%; background:#50d573; color:#fff; display:block;}
+.bluebg{ width:100%; height:100%; background:#56c9ff; color:#fff; display:block;}
+
+.zsTable-big th{ padding:0 12px;}
+.zsTable-big tr:first-child th{ border-bottom:none; font-size:14px; color:#ec524c; background:#fff;}
+
+.zshelp{ font-size:1rem;  width:100%; border:1px solid #cdcdcd; padding:0 1rem; background:#fff;}
+.zshelp{height:2rem; line-height:2rem;}
+.zshelpMain p{ background:#fff; font-size:.8rem; height:1.3rem; line-height:1.3rem; color:#999; padding:0 1rem;}
+.zshelp:hover{ color:#ec524c; background:#f3f3f3;}
+
+/*new trend start */
+ .TrendTable{ width:98%; margin:0px 1%; background:#959595;}
+ .TrendTable th{ height:2rem ; line-height:2rem; text-align:center; background:#d6d6d6;}
+ .TrendTable td{ height:2rem ; line-height:2rem; text-align:center; background:#f0f0f0;}
+ #Trend .dscur{ width:1.5rem; height:1.5rem; line-height:1.5rem; text-align:center; border-radius:2rem; background:#EC524C; color:#FFF; display:inline-block; position:relative;}
+ #Trend .dscur1{ width:1.5rem; height:1.5rem; line-height:1.5rem; text-align:center; border-radius:2rem; background:#09F; color:#FFF; display:inline-block; position:relative;}
+ #Trend .dscur2{ width:1.5rem; height:1.5rem; line-height:1.5rem; text-align:center; border-radius:2rem; background:#0C3; color:#FFF; display:inline-block; position:relative;}
+ #Trend .dscur3{ width:1.5rem; height:1.5rem; line-height:1.5rem; text-align:center; border-radius:2rem; background:#0F6; color:#FFF; display:inline-block; position:relative;}
+ #Trend .times{ width:1rem; height:1rem; line-height:1rem; text-align:center; border-radius:1rem; background:#0C6; color:#FFF; display:inline-block; position:absolute; top:-0.5rem; right:-0.5rem;}
+/*new trend  end */
+.shangce{ position:fixed;z-index:100; top:200px; background:#FFF; padding:10px;}
+.shangce span{ padding: 5px 10px; border:1px solid #CCC; display:block; float:left; margin:5px;}
+
+/*新增层样式*/

@@ -1,0 +1,21 @@
+.choose-lottery .hot-lottery{width:998px;margin:10px 0 0 0;z-index:1;overflow:hidden;height:223px;background:#fafafa;border:1px solid #d9d9d9;border-radius:4px;}
+.choose-lottery h2{font-size:13px;line-height:32px;border-top:1px solid white;border-bottom:1px solid #d9d9d9;border-radius:6px 6px 0 0;text-shadow:0 1px rgba(255,255,255,.9);padding:0 0 0 15px;background:#f6f6f6;}
+.choose-lottery h3{font-size:14px;color:#333;}
+.choose-lottery .all-lottery{width:998px;border:1px solid #d9d9d9;border-radius:6px;margin:10px 0 15px;overflow:hidden;}
+.choose-lottery .all-lottery .inner{padding:15px 0 0 15px;margin-bottom:15px}
+.choose-lottery .lottery-type{position:relative;float:left;width:290px;height:90px;overflow:hidden;padding:10px;border:1px solid #d9d9d9;margin:0 15px 15px 0;border-radius:5px;behavior:url(/images/PIE.htc);background:url(/images/lottery-type-bg.png) repeat-x;}
+.choose-lottery .lottery-type p,.choose-lottery{margin:0 0 7px;line-height:1.2;margin-top:-1px;}
+.choose-lottery .lottery-type h3{margin:0 0 7px 90px;line-height:1.2;margin-top:-1px;}
+.choose-lottery .lottery-type p a{margin:0 13px 0 0;}
+.choose-lottery .lottery-icon{float:left;width:90px;height:90px;}
+.choose-lottery .ok,.choose-lottery .together_buy_button{text-decoration:none;position:absolute;right:10px;bottom:8px;border-radius:4px;behavior:url(/images/PIE.htc);cursor:pointer;}
+.choose-lottery .together_buy_button{right:90px;}
+.choose-lottery .ok span,.choose-lottery .together_buy_button span{display:inline-block;zoom:1;border:solid white;border-radius:4px;behavior:url(/images/PIE.htc);border-width:1px 0;padding:0 8px;height:22px;line-height:22px;color:#fff;background:#b90000;}
+.choose-lottery .ok:link span,.choose-lottery .ok:visited span,.choose-lottery .together_buy_button:link span,.choose-lottery .together_buy_button:visited soan{background:#b90000;text-decoration:none;}
+.choose-lottery .ok:hover span,.choose-lottery .together_buy_button:hover span{background:#cc0909;text-decoration:none;}
+
+
+.b-red-20,.b-blue-20,.b-org-20{display:inline-block;width:20px;height:20px;line-height:20px;text-align:center;background:url(/images/public/b-20.png) no-repeat 0 0;color:#fff;font-size: 12px;}
+.b-red-20{margin-right:4px;}
+.b-blue-20{margin-right:5px;background-position:0 -21px;}
+.b-org-20{background-position:0 -42px;margin-right:3px;}

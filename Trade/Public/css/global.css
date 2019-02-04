@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@media screen and (min-width:240px) {
+html, body, button, input, select, textarea { font-size: 9px }
+
+.text-grey{ width:40%;}
+/*.selectBar{ margin-left:26%;}
+*/}
+
+@media screen and (min-width:320px) {
+html, body, button, input, select, textarea { font-size: 10px }
+.jiajian a{ font-size:4rem;}
+.jiajian a:first-child{ font-size:6rem;}
+.text-grey{ width:42%;}
+}
+
+@media screen and (min-width:374px) {
+html, body, button, input, select, textarea { font-size: 14px }
+
+}
+
+@media screen and (min-width:400px) {
+html, body, button, input, select, textarea { font-size: 15px }
+}
+
+
+@media screen and (min-width : 420px ){
+html, body, button, input, select, textarea { font-size: 16px }
+}
+
+@media screen and (min-width:450px) {
+html, body, button, input, select, textarea { font-size: 17px }
+
+}
+
+@media screen and (min-width:480px) {
+html, body, button, input, select, textarea { font-size: 18px }
+
+}
+
+@media screen and (min-width : 540px ){
+html, body, button, input, select, textarea { font-size: 20px; }
+/*.selectBar{ margin-left:40%;}
+*/
+}
+
+@media screen and (min-width:590px) {
+html, body, button, input, select, textarea { font-size: 22px }
+}
+
+@media screen and (min-width:600px) {
+html, body, button, input, select, textarea { font-size: 23px }
+}
+
+@media screen and (min-width:640px) {
+html, body, button, input, select, textarea { font-size: 24px }
+}
+
+@media screen and (min-width:720px) {
+html, body, button, input, select, textarea { font-size: 27px }
+}
+
+@media screen and (min-width:800px) {
+html, body, button, input, select, textarea { font-size: 30px }
+}

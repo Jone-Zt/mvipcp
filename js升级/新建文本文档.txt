@@ -1,0 +1,7 @@
+<script>
+	var coinType = '<%=Setting(56)%>';
+	var coinUnit = '<%=Setting(58)%>';
+</script>
+
+Include/KR.CommonCls.asp
+Trade/Index.asp

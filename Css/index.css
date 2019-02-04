@@ -1,0 +1,157 @@
+*{margin:0;padding:0}
+a{color:#404141;text-decoration:none}
+a img{border:0}
+ul,ol{list-style:none}
+b{font-weight:400}
+table{table-layout:fixed;width:100%;border-collapse:collapse;border-spacing:0}
+img{vertical-align:middle}
+input,button,textarea,select{color:#404141;font:14px/1.5 '\5FAE\8F6F\96C5\9ED1',Arial,Helvetica,sans-serif;vertical-align:middle}
+select{height:30px;border:1px solid #cfcfcf;line-height:30px}
+html{overflow-y:scroll;}
+body{background:#ffffff;color:#404141;font:14px/1.5 '\5FAE\8F6F\96C5\9ED1',Arial,Helvetica,sans-serif;word-wrap:break-word;word-break:break-all;-webkit-text-size-adjust:none; padding-bottom:20px}
+.body-trans{-webkit-transition:all ease-out .3s;-moz-transition:all ease-out .3s;-o-transition:all ease-out .3s;-ms-transition:all ease-out .3s;transition:all ease-out .3s}
+.clearfix:after{display:block;clear:both;height:0;visibility:hidden;font-size:0;line-height:0;content:' '}
+.clearfix{zoom:1}
+.fl{float:left}
+.fr{float:right}
+.hide{display:none}
+.font_25{ font-size:25px;}
+.color_red{color:#FF0000}
+.logo_list{overflow:hidden}
+.color_999{color:#999}
+.color_green{color:#4EB000}
+/****/
+.dj_bb,.contact_tel .phone i,.spe_ico,.jj_ico,.new_ico,.tool_list i,.bottom_bar li i,.mycount ul li.showmoney span,.bottom_redio i{ background:url(../images/index.png) no-repeat; background-size:78px 155px; display:inline-block}
+.dj_bb{width:78px; height:25px;}
+.spe_ico{ background-position:-29px -26px; width:16px;height:13.5px;margin-right:5px;}
+.new_ico{background-position:-51px -27px; width:27px;height:16px;}
+.jj_ico{background-position:-39px -44px; width:39px;height:16px; margin-left:5px;}
+.mycount ul li.showmoney span{background-position:-0px -102px;}
+/**header**/
+
+
+.font_wx{background:#03df99;}
+.font_wx:hover{background:#03df09}
+
+
+
+.wap{ max-width:100%;  margin:0px auto;overflow:hidden; position:relative}
+.main,.banner img{ width:100%;}
+.logo_list li a, .post_box{ margin-left:10px}
+.main{ float:left;}
+.post_box{ line-height:37px}
+.aside{   }
+.aside .mod_box{   line-height:37px;}
+.aside .list_news{margin:0 0 10px 10px; overflow:hidden}
+.bottom_redio,.aside .list_news,.logo_list li a,.cz_list li .info,.login_box a span,.tool_list li a ,.login_ok_box{border-radius:5px;border:1px solid #E9E9E9; background:#fff;box-shadow:0 0 1px #e9e6e6}
+.title_top{padding:0 10px 0 20px;}
+.news_box .list_news{padding-top:37px;background:#fffeee;}
+.title_top h3{ font-weight:100}
+.list_news li{line-height:37px;border-top:1px solid #ddd;padding:0 10px;margin-top:-1px;}
+.news_box .title_top{margin-bottom:-37px;position:relative;overflow:hidden;}
+.news_box .title_top .dj_bb{position:absolute;top:6px;left:10px}
+.contact_tel .list_news{overflow:visible;height:45px;}
+.contact_tel li{border:none;margin:0;line-height:45px;}/*position:relative;*/
+.contact_tel .phone{height:100%;padding:1px 20px; background:#1166aa;color:#fff;border-radius:0 5px 5px 0; position:absolute; right:0; top:-1px}
+.contact_tel .phone i{width:26px;height:27px; background-position:0 -26px;vertical-align:-8px;margin-right:10px}
+/**¹«¸æ**/
+.login_box,.logo_list li,.banner{margin-bottom:10px;}
+.login_box { overflow:hidden;display:none;text-align:center;font-size:16px; margin-left:5px}
+.login_box a,.login_box a span{ display:block}
+.login_box a{ width:50%; float:left;} 
+.login_box a span{height:39px; line-height:39px;}
+.bottom_redio{ line-height:45px;text-align:center; margin-left:10px; overflow:hidden}
+.bottom_redio label{margin:0 10px 0 5px;}
+.bottom_redio i:first-of-type{width:19px;height:16px;  display:inline-block; vertical-align:middle; margin-left:10px;background-position: 0 -131px;}
+.bottom_redio i:last-of-type{width:19px;height:16px;  display:inline-block; vertical-align:middle; margin-left:10px;background-position: -20px -131px;}
+.logo_list li{width:33.3%;float:left; text-align:center;}
+.logo_list li a{display:block;padding:10px 0;}
+.logo_list li img{ width:50px; height:50px; margin-right:5px;}
+.footer{ text-align:center; line-height:25px; padding-top:10px;}
+.foot_nav a{line-height:16px;margin:0 10px; }
+.footer a,.foot_nav{ color:#1166AA }
+.footer a.sel{color:#333}
+.cz_list{ overflow:hidden; }
+.cz_list li{ width:100%; float:left;margin-bottom:10px}
+.cz_list li .info{ margin-left:10px;overflow:hidden; padding:8px 0 8px 5px; min-height:48px;}
+.cz_list li .info_l{ float:left; width:50px; height:50px; padding-right:5px;}
+.cz_list li .info_l img{ width:100%;}
+.cz_list li b{ font-size:16px;}
+.cz_list li p.color_999{font-size:12px}
+.aside .mod_box,.aside .bottom_redio{ margin-right:10px;}
+.tool_list li{ width:50%; float:left;}
+.tool_list{ margin:0 0 10px 5px; display:none}
+.tool_list li a{display:block; margin-left:5px;  line-height:16px; height:16px; padding:21px 0; text-align:center;}
+.tool_list i{width:16px; height:16px; margin-right:5px; vertical-align:-2px}
+.tool_list i.bf_ico{ background-position:-27px -62px}
+.tool_list i.gg_ico{ background-position:-45px -62px}
+.tool_list i.yh_ico{ background-position:-62px -62px}
+.bottom_bar{ height:44px; background:#22292c; position:fixed; width:100%; bottom:0; left:0; padding:10px 0 0; line-height:14px; display:none;}
+.bottom_bar li{ width:25%; float:left; text-align:center}
+.bottom_bar li a{ display:block;color:#fff;font-size: 12px;}
+.bottom_bar li i{ width:26px; height:23px;}
+.bottom_bar li i.home_ico{background-position:0 -55px}
+.bottom_bar li i.hm_ico{background-position:0 -79px}
+.bottom_bar li i.kj_ico{background-position:-26px -79px}
+.bottom_bar li i.zh_ico{background-position:-52px -79px}
+.login_box,.tool_list,.bottom_bar{ display:block}
+ 
+.logo_list li a,.post_box,.logo_list,.login_box a span{ margin-left:5px}
+.login_box,.logo_list li,.banner,.aside .list_news,.cz_list li,.login_ok_box{margin-bottom:0px;}
+.login_ok_box{position: relative;height: 35px;line-height: 35px;overflow:hidden;margin:0px 10px 5px 10px;padding:5px 10px}
+.name{font-size:14px;font-weight: normal;  margin-right:180px;text-overflow :ellipsis;overflow:hidden;}
+ 
+.mycount{position: absolute;
+height: 25px;
+line-height: 25px;
+top: 10px;
+right: 13px;
+ }
+body{ padding-bottom:7px;}
+.mycount li{float:left; padding-left:10px;margin-left:10px;font-size:14px; }
+.mycount li.money span{color:red}
+.mycount li.money span i{font-size:14px; font-style: normal;}
+.mycount li.count{border-left: 1px solid rgba(219, 219, 219, 0.5);}
+.mycount li.showmoney span{color:#1166aa;padding-left:18px; height:27px;}
+.bottom_redio{margin:0 10px}
+.logo_list li{width:33.3%;}
+.main{ width:auto; float:none;}
+.wap{padding:0}
+.post_box,.logo_list,.cz_list,.login_box{padding:0 10px 0 0; overflow:hidden}
+.cz_list li{ width:100%}
+.aside{width:100%; float:none;}
+.banner{ width:100%; overflow:hidden;display:block}
+.banner p{position: absolute;
+bottom: 14px;
+left: 0;
+width: 100%;
+height: 6px;
+text-align: center;}
+.banner p span{display: inline-block;
+width: 6px;
+height: 6px;
+margin: 0 1px;
+opacity:0.7;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+background-color: white;}
+.banner p span.cur{background-color: red;}
+.cz_list ul li .info_r{ margin-top:4px;}
+.arrow_bg{ background:url(../images/arr_bg.gif) repeat-x; background-size:5px 38px; margin-left:10px; height:38px; margin-bottom:10px; font-size:16px; color:white; line-height:38px; padding-left:10px;}
+
+ /*½¹µãÍ¼*/
+#wrapper {width:320px;height:100px; margin:0 auto;position:relative;z-index:1;overflow:hidden;}
+#scroller {width:960px;height:100%;float:left;padding:0;}
+#scroller ul {list-style:none;display:block;float:left;width:100%;height:100%;padding:0;margin:0;text-align:left;}
+#scroller li {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;
+display:block; float:left;width:320px;  text-align:center;font-family:georgia;font-size:18px;line-height:140%;}
+#scroller li img { width:100% }
+#nav {position:absolute;bottom:5px;left:0;width:100%;}
+#indicator > li {display:block; float:left;list-style:none;padding:0; margin:0;}
+#indicator { width:40px;margin:0 auto;}
+#indicator > li {text-indent:-9999em;width:8px; height:8px;-webkit-border-radius:4px;-moz-border-radius:4px;-o-border-radius:4px;
+  border-radius:4px;background:white;overflow:hidden;margin-right:4px; background:rgba(255, 255, 255, .4)}
+#indicator > li.active {background:red;}
+#indicator > li:last-child {margin:0;}
+@media screen and (max-width:960px){.logo_list li{width:33.33%}.logo_list li a{ padding:10px 0}}
+@media screen and (max-width:766px){.cz_list li{ width:100%}}

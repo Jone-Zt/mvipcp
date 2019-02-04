@@ -1,0 +1,275 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="GBK">
+	<meta name="keywords" content="开奖_号码预测推荐_走势图_网站系统触屏版"/>
+	<meta name="description" content="网站系统是手机上最好的投注平台，10年游戏金牌服务经验，为游戏朋友提供安全的手机游戏投注、游戏合玩服务、游戏资讯"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>方案详情-网站系统</title>
+	<link href="/Css/basic.css" rel="stylesheet">
+	<link href="/trade/css/jczq/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/template.js"></script>
+	<script language="javascript" type="text/javascript" src="/JS/Jquery-1.7.2.Min.js"></script>
+</head>
+<body>
+	<div class="head">
+		<h2 onClick="javascript:upcss();" id="navtit"><em id="jiangaa"><h1>方案详情</h1></em></h2>
+		<a href="javascript:history.go(-1)" class="btn-qgkj" id="sourceUrl"><span><em></em></span>返回</a>
+	</div>
+	<div class="main">
+		
+        
+	</div>
+	<script>
+	template.helper("DeCode",function(str){
+	    return unescape(str);
+	})
+	template.helper("ShowQiHao",function(qihao){
+	    var nian = qihao.substr(0,4)+"/"+qihao.substr(4,2)+"/"+qihao.substr(6,2);
+		var week = new Date(nian).getDay();
+		var wx   = ["周日","周一","周二","周三","周四","周五","周六"];
+		return wx[week]+qihao.substr(-3,3);
+	})
+	template.helper("ShowBetCode",function(a,b,c){
+	   var aa = a.split(","),cc=c.split(",");
+	   var  str = "";
+	   var pv   = {"a":"sheng","b":"fu","c":"fencha","d":"bifen"}; 
+	   var kv = {"a1":"主胜","a2":"客胜","b1":"让主胜","b2":"让客胜","c1":"大分差","c2":"小分差","d01":"(主)1-5","d11":"(客)1-5","d02":"(主)6-10","d12":"(客)6-10","d03":"(主)11-15","d13":"(客)11-15","d04":"(主)16-20","d14":"(客)16-20","d05":"(主)21-25","d15":"(客)21-25","d06":"(主)26+","d16":"(客)26+"};
+	      str += "<span ></span>"
+	   for( var i=0 ; i < aa.length ; i++ ){
+		  var cs = a.substr(0,1); 
+		  var bool = b.indexOf(aa[i])>= 0 ?  '['+cc[i]+']' : '';
+		  str += '<span class="'+pv[cs]+'">'+kv[aa[i]]+bool+'</span>';  
+	   }
+	   return str ;
+	})
+	template.helper("FormatDate",function(datastr,str){
+		 var d = datastr == null ? new Date() : new Date(datastr);
+		 var temm = {
+			 "Y" : d.getFullYear(),
+			 "m" : (d.getMonth()+1) > 9 ? d.getMonth()+1 : "0"+(d.getMonth()+1),
+			 "d" : d.getDate() > 9 ? d.getDate():"0"+d.getDate(),
+			 "H" : d.getHours()> 9 ? d.getHours() : "0"+d.getHours(),
+			 "i" : d.getMinutes() > 9 ?　d.getMinutes(): "0"+d.getMinutes(),
+			 "s" : d.getSeconds() > 9 ?  d.getSeconds() : "0"+d.getSeconds() 
+		 }
+		 for( var indexs in temm ){
+		   str = str.replace(indexs,temm[indexs]);
+		 }
+		 return str ;
+	})
+	 $(function(){
+		$(".btn_hm_buy").click(function(){
+			var _this = this;
+				AJAX_HM({
+	                id:$(_this).data("id"),
+	                money:$(".lot_gd_input input").val(),
+	                action:"buy"
+	            })
+		});
+		$(".lot_gd_input input").keyup(function(){
+			var am=18*$(".lot_gd_input input").val();
+			$("#am").html(am);
+		});
+		
+
+})
+
+var ajaxGD = function(data){
+    $.ajax(
+	    {
+			url: '/Trade/jclq/data/buy.asp',
+			type:'POST',
+			dataType: 'json', 
+			data:data,
+			success : function(data){
+			   alert(data.msg);
+			   if( data.code == 1){
+			      window.location.href= "/User/BuyRecord.html";
+			   }
+			}
+		}
+	)
+}
+
+var t;
+$(document).ready(function() {
+	$(document).find(".lot_context").eq(0).click();
+	drawProcess();
+	i = 0;
+	t = setInterval("addNum()",35);
+	var href = window.location.href.split("?");
+	href     =  href[1].split("=")[1];
+	$.get("/Trade/Jclq/data/view.asp",{id:href,t:new Date().getTime()},function(data){
+		//console.log(unescape(data["code"][0]["title"][0]));
+	   var html = template("artdetail",{data:data});
+	   document.querySelector(".main").innerHTML = html;
+	   setTimeout(function(){
+	      $(document).find("#gdlbc").click(function(){
+			$("#gdlb").hide();
+			$(".lot_context").eq(0).click();
+		 });
+		 $(document).find("#gdlbs").click(function(){
+			$("#gdlb").show();
+		 });
+		 $(document).find(".lot_context").click(function(){
+			var $this = $(this);
+			var h = $this.find('.lot_view').innerHeight();
+			if($this.hasClass('lot_view_show')){
+				$this.removeClass('lot_view_show').css("height","-="+h+"px").find(">.lot_open span").css("transform","rotate(0)");
+			}else{
+				$this.addClass('lot_view_show').css("height","+="+h+"px").find(">.lot_open span").css("transform","rotate(450deg)");
+			}
+		 });
+		 $(document).on("input","#UserGenDan",function(){
+			 var bs = Number(this.value);
+			 bs     = bs == 0 ? 1 : bs;
+			 var db = $(document).find(".btn_hm_buy").attr("dbjd");
+			 $("#am").text(db*bs);
+		 })
+		 $(document).on("click",".btn_hm_buy",function(){
+		     var obj = {
+			    "id":$(document).find(".btn_hm_buy").attr("data-id"),
+				"bs":$(document).find("#UserGenDan").val(),
+				"db":$(document).find(".btn_hm_buy").attr("dbjd"),
+				"act":"gd"
+			 }
+			 ajaxGD(obj);  
+		 })
+		 $(".lot_open").eq(1).click();
+	   },1000)
+	},'json');
+});
+function addNum() {
+	if(i<=100-1){
+		i++;
+		$('canvas.process').text(i+"%");drawProcess();
+	}else{
+		clearInterval(t);
+	}
+}
+function drawProcess() {  
+    $('canvas.process').each(function() {
+        var text = $(this).text();
+        var process = text.substring(0, text.length-1);   
+        var canvas = this;
+		var w = 80;
+		var h = 80;
+		canvas.width = w*2;
+		canvas.height = w*2;
+        var context = canvas.getContext('2d');
+        context.clearRect(0, 0, w*2, h*2);  
+        context.beginPath();  
+        context.moveTo(w, h);  
+        context.arc(w, h, w, 0, Math.PI * 2, false);  
+        context.closePath();  
+        context.fillStyle = '#ddd';  
+        context.fill();  
+        context.beginPath();  
+
+        context.moveTo(w, h);    
+        context.arc(w, h, w, Math.PI*1.5, 10000*(Math.PI * 1.5 + Math.PI * 2 * process / 100)/9999, false);  
+        context.closePath();  
+        context.fillStyle = '#FF0206';  
+        context.fill();   
+        context.beginPath();  
+        context.moveTo(w, h);  
+        context.arc(w, h, w-20, 0, Math.PI * 2, true);  
+        context.closePath();  
+        context.fillStyle = 'rgba(255,255,255,1)';  
+        context.fill();  
+        context.beginPath();  
+        context.arc(w, h, w-21, 0, Math.PI * 2, true);  
+        context.closePath();  
+        context.strokeStyle = '#ddd';  
+        context.stroke();  
+        context.font = "bold 25pt Arial";  
+        context.fillStyle = '#FF0206';  
+        context.textAlign = 'center';  
+        context.textBaseline = 'middle';  
+        context.moveTo(w, h);  
+        context.fillText(text, w, h);  
+    });
+}
+</script>
+</body>
+</html>
+
+<script type="text/html" id="artdetail">
+ <div class="lot_open">方案详情>竞彩篮球-混投</div>
+		<div class="lot_nav" style="background:url(../../Images/123.png) no-repeat left 10px center; height:100px; background-size:80px;">
+            <div class="lot_user mleft">{{data['UserName']}}</div>
+            <br>
+            <div class="lot_user mleft"><span class="fontcss1">自投金额</span><br><span class="fontcss2">{{data['zg']}}彩豆</span></div><div class="lot_user"><span class="fontcss1">起跟金额</span><br><span class="fontcss2">{{data['gdje']}}彩豆</span></div>
+        </div>
+		<div class="lot_context">
+			<div class="lot_open">点击展开方案信息<span></span></div>
+			<div class="lot_view">
+				<div class="lot_all_user">
+					<span class="fontcss1">金　　额：</span><span class="fontcss2">{{data['zg']}}彩豆</span>
+				</div>
+				{{if data['copysheet']==1}}
+				<div class="lot_all_user">
+					<span class="fontcss1">跟单信息：</span>共<span class="fontcss2">{{data["gdtotal"]}}彩豆</span><div id="gdlbs" style="float:right; background:#E81929; color:#FFFFFF; width:100px; height:40px; text-align:center; line-height:40px;">跟单列表 ></div>
+				</div>
+				{{/if}}
+				<div class="lot_all_user">
+					<span class="fontcss1">提　　成：</span><span class="fontcss2">{{data["tc"]}}%</span>
+				</div>
+				<div class="lot_all_user">
+					<span class="fontcss1">状　　态：</span><span class="fontcss2">
+					   {{data["state"]}}
+					   {{if data["state"]=="已中奖"}}
+					     ，中奖金额：{{data['isWin']}} 
+					   {{/if}}
+					</span>
+				</div>
+			</div>
+		</div>
+        
+		<div class="lot_context2" id="gdlb" style="display:none;position:fixed; top:0px;left:0px; width:100%; height:100%; background:#FFFFFF;z-index:9999;">
+        
+	<div class="head">
+		<h2 onClick="javascript:upcss();" id="navtit"><em id="jiangaa"><h1>跟单列表</h1></em></h2>
+		<a class="btn-qgkj" id="gdlbc"><span><em></em></span><</a>
+	</div>
+			<div class="lot_view">
+				<!--div class="lot_all_user"-->
+				  <table style="width:100%; border:0px;" cellpadding="0" cellspacing="0">
+				     <tr style=" background:#f0f0f0; height:30px; line-height:30px;">
+					   <th>用户名</th>
+					   <th>倍数</th>
+					   <th>金额</th>
+					   <th>时间</th>
+					 </tr>
+					 {{each data["gd"] as obj}}
+					  <tr>
+					    <td style="height:30px; line-height:30px;text-align:center">{{obj['u']}}</td>
+						<td style="height:30px; line-height:30px;text-align:center">{{obj['bs']}}</td>
+						<td style="height:30px; line-height:30px;text-align:center">{{obj['m']}}</td>
+						<td style="height:30px; line-height:30px;text-align:center">{{=FormatDate(obj['t'],'m-d H:i')}}</td>
+					  </tr>
+					 {{/each}}
+				  </table>	
+				<!--/div-->
+			</div>
+		</div>        
+        
+		<div class="lot_context">
+			<div class="lot_open">点击展开投注内容<span></span></div>
+			<div class="lot_view">
+			   {{each data["code"] as objs}}	
+				<div class="lot_title"><span class="lot_week">{{ShowQiHao(objs["qihao"])}}</span>{{ DeCode(objs["title"][0])}}<span style="font-size:12px;">VS</span>{{ DeCode(objs["title"][1])}}</div>
+				<div class="lot_text">
+				   {{=ShowBetCode(objs["bet"],objs["open"],objs["betsp"])}}
+				 </div>
+				 {{/each}}
+			<div>发起时间：{{data.dealtime}}</div>
+			</div>
+		</div>
+		
+		{{if data['copysheet']==1}}
+        {{if data["state"] === "进行中"}}
+		<div class="lot_open lot_gd_input" style=" font-size:14px; font-weight:bold;color:#E81929;">购买　<input type="text" placeholder="1" value="1" id="UserGenDan"> 倍　<font id="am">{{data['gdje']}}</font>彩豆　<button data-id="{{data["id"]}}"  dbjd="{{data['gdje']}}" class="btn_hm_buy">　跟　　单　</button></div>        {{/if}}{{/if}}
+</script>

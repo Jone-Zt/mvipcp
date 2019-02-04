@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, button, input, select, textarea { font: 9px/1.5 arial, "Microsoft YaHei"; color: #333;}
+html { height: 100%; display: block; color: #333; background: #f3f3f3;-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+body { margin: 0; padding: 0;min-height: 100%; -webkit-overflow-scrolling: touch  }
+html, body, h1, h2, h3, h4, h5, h6, form, div, p, i, img, ul, li, ol, table, tr, td, th, fieldset, label, legend, button, input,dl,dd { margin: 0; padding: 0; }
+input, button, textarea, select, optgroup, option, p, label{font-family:tahoma, arial, "Microsoft YaHei", sans-serif; }
+
+a img { border: none; }
+img { border: none; }
+ul, ol, li { list-style: none }
+h1 { font-size: 24px; }
+h2 { font-size: 20px; font-family: "微软雅黑"; }
+h3 { font-size: 18px; color: #ff8522; font-weight: bold; text-align: center; }
+h4 { font-size: 16px; color: #ff8522; font-weight: bold; text-align: center; }
+h5 { font-size: 14px; color: #ff8522; font-weight: bold; text-align: center; }
+h6 { font-size: 12px; color: #ff8522; font-weight: bold; text-align: center; }
+i { color: #ec524c; font-style: normal; }
+b { color: #ec524c; font-size: 14px; padding: 10px; line-height: 30px; }
+a { color: #000; text-decoration: none; }
+a:visited { color: #333; text-decoration: none; }
+a:hover { color: #ec524c; text-decoration: none; }
+a:active { color: #333; }
+
+.clr{ float:none;}

@@ -1,0 +1,283 @@
+/* CSS Document */
+body{background:#f5f5f5;}
+.clear{ clear:both}
+/**.uc_wap{position:absolute;width:100%;top:44px;bottom:0;overflow:auto;padding-bottom:20px;}**/
+.uc_wap{ margin-top:40px;}
+.ov_hidden{ overflow:hidden;}
+/**btn**/
+.uc_aut_btn{ height:31px; line-height:29px;padding:0 8px;border-radius:5px;color:#fff; margin-left:10px}
+.uc_aut_btn,.uc_aut_btn span{ display:inline-block; font-size:16px;}
+.red_btn,.blue_btn{border: #cccccc solid 1px;box-shadow: 0 1px 0 #fff inset;
+background: -webkit-gradient(linear,0 0,0 100%,from(#f3f3f3),to(#e5e5e5));
+background:-moz-linear-gradient(top, #f3f3f3, #e5e5e5);
+background:-ms-linear-gradient(top, #f3f3f3, #e5e5e5);
+background:linear-gradient(top, #f3f3f3, #e5e5e5);
+color:#333;}
+
+/**ico**/
+.people_ico{width:25px;height:26px;display:inline-block;background:url(/images/uc_ico.png) no-repeat 0 -212px;background-size:25px 350px;vertical-align:middle;margin-right:5px;}
+.sigh_ico1,.ico2,.sigh_ico2{width:25px;height:25px;margin-top:10px;}
+.ico2{background-position:0 -28px;margin-top:5px;}
+.sigh_ico2{background-position:0 -84px;}
+.sel_ico,.right_ico,.arr_right,.sigh_ico1,.sigh_ico2{display:inline-block;vertical-align:middle;}
+.login_btn{display:inline-block; font-size:16px;width:100%;display:block;height:38px;line-height:38px;position:static; margin-bottom:20px;cursor:pointer;}
+.login{padding:0 10px; margin:20px auto 0}
+.login_list{margin-bottom:15px}
+.login_list li{ min-height:49px;border-bottom:1px solid #ddd; margin-bottom:-1px;}
+.reg_box .login_list li{ min-height:32px;line-height:1.8em; padding:5px 0;}
+.reg_box .login_list li.user_txt{ line-height:32px;}
+.reg_box .login_list li .zc_txt_info{padding-left:30%; display:block;cursor:pointer;}
+.reg_box .login_list li .zc_txt_info .tit{ font-size:16px; font-weight:bold}
+.f_box{padding:9px 10px 9px 80px; height:30px; line-height:30px; position:relative;}
+.bd_box{ padding:9px 10px 9px 95px}
+.f_box em{ margin-left:-70px;float:left;display:block;width:80px;border-right:1px solid #ddd;}
+.bd_box em{margin-left:-85px;width:75px;}
+.login_list ul{ overflow:hidden;}
+.txt{height:30px;line-height:30px; border:none; background:none; width:90%; margin-left:10px;}
+.f_box span{margin-left:10px;}
+#exi,#exb{margin-left:10px;}
+.sel_ico{background:url(/images/sel_ico.png) no-repeat;}
+.sel_ico_cur{ background-position:0 -19px}
+.sel_ico{width:16px; height:18px; background-size:16px 36px}
+.right_ico{width:24px; height:24px; background-position:0 -57px; background-size:25px 350px;}
+.arr_right{width:10px;height:10px;background:url(/images/arr_right.png) no-repeat;background-size:100% 100%;}
+/****/
+.right_ico{margin-right:10px}
+.login_btn_sel{padding:0 0 15px;overflow:hidden;}
+.ver_code{width:75px; height:39px;position:absolute; right:5px;top:5px; display:block}
+.reg_box .login_list .reg_step{line-height:32px;}
+.reg_step span{display:inline-block;width:40px;text-align:center;color:#999}
+.reg_step span.cur{color:#222}
+.ts_bottom{ line-height:30px;}
+/**安全提示**/
+.zh_text{padding:5px 10px 10px;}
+.zh_text h2{ line-height:30px;line-height:30px;}
+/**安全等级**/
+.ver_uc{ height:27px;line-height:27px;padding:10px;}
+.star_box{display:inline-block}
+/****/
+.bind_list li{cursor:pointer;padding:8px 10px;position:relative;border-top:1px solid #ddd;overflow:hidden}
+.bind_list li .sec_r{display:block; float:right; padding-top:10px;}
+.alt_box .bind_list li .sec_r,.draw_box .bind_list li .sec_r{ padding:0}
+.draw_box .bind_list li .sec_r{ text-align:right}
+.draw_box .bind_list{ overflow:hidden}
+.draw_box .bind_list li{ margin-top:-1px;}
+.bind_list li .sigh_ico1,.ico2,.sigh_ico2{margin-right:10px;}
+.bind_list li b{font-size:16px}
+.alt_box{ margin:15px 0}
+.alt_box .bind_list li{ padding:5px 10px; line-height:36px; height:36px; border:none}
+.star_box{width:100px;height:15px;margin:5px 0 0 5px;}
+.star_box span{display:inline-block; overflow:hidden; height:15px; vertical-align:top}
+
+/**绑定手机**/
+.phone_bin{ margin-right:-10px; overflow:hidden; margin-bottom:15px;}
+.phone_bin .vea_num{ width:50%; float:left}
+.vea_text{height:48px;line-height:48px; text-align:center; margin-right:10px;}
+.vea_text .t{text-align:center;}
+.phone_bin .txt,.var_num_btn{width:100%; text-align:center}
+.text_top{ padding-bottom:10px;}
+/**找回密码**/
+.back_paw .mod_box{padding:35px 0; text-align:center; line-height:30px; margin-bottom:20px}
+.back_paw .kf_phone{ font-size:30px;}
+/**兑换**/
+.draw_top_txt{ padding:0 0 10px 10px;}
+.ok_txt{padding:30px 0; margin-bottom:10px}
+.zh_ye .bd_box em{ border-right:1px solid #fff}
+.bottom_txt{ margin-top:10px; padding-bottom:15px; margin-left:5px;}
+.card_info{line-height:30px; color:#999; overflow:hidden}
+.card_info span{display:inline-block; width:60px;}
+.card_info p{ border-top:1px solid #ddd; margin-top:-1px; padding:0 10px}
+.card_li .bd_box{ padding:0 0 0 95px; height:auto}
+.card_li em{padding-top:10px}
+.cro_box{position:relative;overflow:hidden;width:49px; height:49px; margin:0 auto}
+.cro_box span{ position:absolute; display:block; background:#ddd}
+.cro_box span.tra{width:49px;height:11px;left:0;top:19px;line-height:0;}
+.cro_box span.vert{width:11px; height:49px;left:19px;top:0;}
+.cro{ padding:30px 0; text-align:center; cursor:pointer}
+.cro p{ padding-top:20px;}
+.bank_logo1,.bank_logo2,.bank_logo3,.bank_logo4,.bank_logo5{width:53px;height:35px;float:left;margin:5px 12px 0 0;background:url(/images/bank_logo.jpg);background-size:53px 143px;}
+.bank_logo2{ background-position:0 -35px;}
+.bank_logo3{ background-position:0 -70px;}
+.bank_logo4{ background-position:0 -105px;}
+/**选择银行**/
+.bank_sel{overflow:hidden; margin-bottom:10px;}
+.bank_sel dl{ padding:0 0 0 10px; overflow:hidden;}
+.bank_sel dt{padding:6px 0; display:block; font-size:16px; font-weight:bold}
+.bank_sel dd{margin-bottom:10px;width:33.3%; float:left;}
+.bank_sel dd span{border:1px solid #ddd;margin-right:10px;height:28px;line-height:28px;background:#fff;text-align:center; display:block; font-size:12px;}
+.bank_sel dd.sel span{background:#ff8800; border:1px solid #ff8800;color:#fff;}
+.bank_add dd{ width:50%}
+/**充值**/
+.rec_list{overflow:hidden}
+.rec_list li{margin-top:-1px;}
+.bank_point{ line-height:25px; padding-bottom:10px; font-size:16px;}
+.bank_point .sigh_ico1{ margin-right:10px; margin-top:0}
+/**投注记录**/
+.brts_tit{ background:#ddd;}
+.brts_tit td{ height:35px; line-height:35px;}
+.brts_list li{ padding:12px 0px 8px 0px;position:relative;}
+.brts_list_other li{ padding:8px 10px 8px 10px;}
+.brts_list li.sel{ background:#ffffff}
+.brts_list li.even{ background:#f5f5f5}
+/*.time_txt,.brts_list li { border-bottom:1px solid #ddd; overflow:hidden}*/
+.time_txt,.brts_list li { border-bottom:1px solid #f1f1f1; overflow:hidden}
+/*.time_txt{ line-height:31px; padding-bottom:1px; font-size:16px; background-color: rgb(250, 250, 250);}*/
+.time_txt{ line-height:40px; padding-bottom:2px; margin-left:5px; font-size:16px;}
+.brts_box{ margin-top:-9px; background:#fff; z-index:1; position:relative}
+.brts_list li b{ font-size:14px; font-weight:normal; margin-right:18px;}
+.brts_list .span_mr{margin-right:18px;}
+.brts_list li div{float:left;}
+.brts_list li div.bh{width:13%;}
+.brts_list li div.lottname{width:29%;}
+.brts_list li div.money{width:29%;}
+.brts_list li div.zj{width:29%;}
+
+.brts_list li div.sr{width:25%;}
+.brts_list li div.zc{width:25%;}
+.brts_list li div.dt{width:25%;}
+.brts_list li div.bz{width:25%;}
+.brts_list_other li b,.brts_list_other .color_green{ margin-right:0}
+
+.basic_txt {border: 1px solid #cccccc;height:25px;vertical-align:-1px; padding:3px;display:inline-block; border-radius:5px;font-size:16px;width:88px}
+.e_mark{background:url(/images/my_ico.png) no-repeat;height:12px;width:12px;}
+.bank_info{padding:10px; line-height:22px;}
+.bank_info p{_padding:5px 0 0 0}
+.bank_info p.has_ico{height:28px; line-height:28px; _padding:0}
+.bank_info .icon-box{vertical-align:-8px; *vertical-align:-6px; margin-right:3px;}
+/**个人中心**/
+.user_info_box{ background:url(/images/userbg.jpg) repeat-x;padding:0px 0 15px 10px;}
+.user_info_box .seg_c span{color:#FFFF00}
+.user_info_box .seg_c{width:81px;height:16px;line-height:16px; font-size:14px;text-align:center; background:#71be3d; border-radius:20px;color:#fff;}
+.info_bt_btn{ padding:9px 10px 0 28px; line-height:29px;}
+
+.usertopc {color:#fff;}
+.userm {padding:0px 0;}
+.userm li{width:48%;float:left;text-align:center;}
+.lhcss li{line-height:38px;}
+
+.mgr30{ margin-right:15px;}
+.he_icon{background: url(/images/uc_ico.png) no-repeat 0 -265px;
+width: 15px;height: 15px;display: inline-block; background-size:25px 350px; margin-left:5px;}
+/**银联银行卡管理心**/
+.wap_h{ background:#f5f5f5; overflow:hidden}
+.cd_box{ border:#dddddd solid 1px; border-radius:5px; background:white; margin:12px 5px; margin-bottom:0}
+.cd_mange{ padding-left:10px; position:relative; height:63px; padding:15px 0 15px 10px;}
+.cd_mange h3{line-height:20px; height:20px;}
+.cd_mange h3{ font-size:16px; color:#202020; }
+.qb_btn{ position:absolute; right:100px; top:20px;float:none}
+.clear_btn{ left:auto; right:18px; top:26px;color: #333;
+border: #cccccc solid 1px;
+box-shadow: 0 1px 0 #fff inset;
+background: -webkit-gradient(linear,0 0,0 100%,from(#f3f3f3),to(#e5e5e5));}
+.selt_cd{ margin:12px 5px; font-size:12px;}
+.dott_cdbox{border:dashed 1px #ddd; height:78px; overflow:hidden; padding-top:15px;}
+.cds_icon{ background-position:0 -160px; width:47px; height:37px; display:block; margin:0 auto}
+.dott_cdbox p{ text-align:center; line-height:30px; font-size:16px;}
+.arrow_mg::after{content: '';position: absolute;-webkit-transform: rotate(138deg);-moz-transform: rotate(140deg);border: 1px solid #ccc;border-width: 2px 0 0 2px;
+width:10px;height: 10px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; right:10px; top:40px;
+-webkit-transform-origin: 33.3% 33.3%;transform-origin: 33.3% 33.3%;}
+
+.cd_box_list,.cd_box_list1{ overflow:hidden}
+.cd_box_list dl{ padding:0 0 0 77px; overflow:hidden; border-bottom:#dddddd solid 1px; line-height:30px; height:30px;}
+.cd_box_list dl dt{ float:left; width:77px; margin-left:-77px;text-align:Justify;-webkit-text-align-last:justify;/*chrome 20+*/; text-align:center}
+.cd_box_list dl dd,.cd_box_list1 dd{ float:left; width:100%; color:#999}
+.cd_box_list1 dl{ padding:0 0 0 83px; border-bottom:#dddddd solid 1px; overflow:hidden; height:49px;  line-height:49px;}
+.cd_box_list1 dt{ float:left; width:83px; text-align:center; margin-left:-83px;}
+.cd_box_list1 dd.color_222{ color:#222; padding-left:12px;}
+.cd_box_list1 dd span{ border-left:#ddd solid 1px; height:30px; line-height:30px; padding-left:12px; overflow:hidden;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.cd_tipsinfo{ padding:5px;}
+.cd_sure_btn{ box-sizing:border-box;background: #1166aa;
+box-shadow: 0 1px 0 #1476c7 inset;border: 1px solid #094b81; display:block; color:white; border-radius:5px; margin:0 5px; text-align:center }
+.ft_cd{ height:40px; line-height:40px; width:100%; margin-top:15px;}
+.cd_tipsinfo_other{ margin:12px 5px 0 5px;}
+.selt_pose{ position:relative; z-index:9; background: url(/images/selt_dot.gif) repeat #fff;}
+.select_list{ width:98%; height:30px; line-height:30px; font-size:16px; border: 0;
+   -webkit-appearance: none; background-size:1px 1px; border:none; border:0; z-index:10; overflow:hidden; margin-top:8px;}
+
+.selt_arrow{ background: url(/images/selt_j.gif) no-repeat 0 0; width:35px; height:35px; display:inline-block; background-size:35px 35px; position:absolute; right:0; top:9px}
+
+/* new user 2014-5-21 */
+.mt10{ margin-top:10px;}
+.new_user_box{ border-bottom:#dddddd solid 1px;}
+.new_user_box dl{ overflow:hidden; padding:0 0 0 39px; height:45px; background:white}
+.new_user_box dd:after{content: '';position: absolute;
+-webkit-transform: rotate(138deg);
+-moz-transform: rotate(138deg);
+-ms-transform: rotate(138deg);
+-webkit-transform-origin: 33.3% 33.3%;
+-moz-transform-origin: 33.3% 33.3%;
+-ms-transform-origin: 33.3% 33.3%;
+transform-origin: 33.3% 33.3%;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;border: 1px solid #ccc;border-width: 2px 0 0 2px;
+width:10px;height: 10px;margin: 18px 0 0 -10px;
+-webkit-transform-origin: 33.3% 33.3%;transform-origin: 33.3% 33.3%; right:15px;}
+.new_user_box dt{ float:left; margin-left:-28px; width:20px; height:18px; margin-top:12px;}
+.new_user_box dd{ width:100%; border-bottom:#dddddd solid 1px; height:44px; line-height:44px; position:relative}
+.new_user_box dl:last-child dd{ border-bottom:none}
+.new_user_box dl:nth-of-type(1){border-top:#dddddd solid 1px;}
+.tips_box{ position:absolute; left:61px; top:10px; background:#ee0000;padding:0 4px;height:16px; line-height:16px; display:block; border-radius:10px; color:white; font-size:12px; text-align:center}
+.ex_font{ font-size:12px;}
+.ex_record_box{ margin-top:9px;}
+.all_icon_user{background: url(/images/user_allicon.png) no-repeat;}
+.new_user_box dt{ background-size:20px 150px}
+.new_user_box dt.icon_1{ background-position:4px 0}
+.new_user_box dt.icon_2{ background-position:4px -22px}
+.new_user_box dt.icon_3{ background-position:4px -46px}
+.new_user_box dt.icon_4{ background-position:1px -71px}
+.new_user_box dt.icon_5{ background-position:4px -92px}
+.new_user_box dt.icon_6{ background-position:4px -116px}
+@media screen and (max-width:640px){
+.brts_tabs ul{padding-right:0;}
+.brts_tabs .arr_gray{display:none}
+.brts_tabs{height:49px}
+footer{ height:50px; line-height:50px;}
+	}
+@media screen and (min-width:640px){
+	.cd_sure_btn{ top:9px;}
+
+.clear_btn{ top:25px;}
+.bank_logo1,.bank_logo2,.bank_logo3,.bank_logo4,.bank_logo5{margin-right:10px;}
+.card_info{line-height:35px;}
+.card_li em{ padding-top:12px;}
+.vea_text{height:58px;line-height:58px;}
+.ico2{margin-top:6px}
+.alt_box .bind_list li{padding:10px;}
+.bind_list li{padding:13px 10px}
+.uc_wap{ margin-top:66px;}
+.login{width:548px;position:relative}
+.login_btn{height:48px;line-height:48px;}
+.f_box{height:40px;line-height:40px; position:relative}
+.ver_code{top:10px;right:10px;}
+.reg_step span{width:55px;}
+.ver_uc{height:37px;line-height:37px;}
+.star_box{margin-top:10px;}
+.bank_sel dd span{height:38px;line-height:38px;}
+}
+
+.page a.h_l,.page_top a.pre,.page_top a.preno,.page_top a.next,.page_top a.nextno,.page a.pre,.page a.preno,.page a.next,.page_top a.nextno,.top3_num,.num_bg,.page span.sele_page input.btn,.page a.nextno,.page a.nextno:hover{background:url(/images/sub_ico.png) no-repeat;}
+.page{text-align:center; padding:10px 0; height:22px; line-height:22px;}
+.page a{display:inline-block; width:21px; height:20px; line-height:20px; border:1px solid #e5e5e5; vertical-align:middle; overflow:hidden; font-family:Tahoma, Geneva, sans-serif;}
+.page a:hover{text-decoration:none; border:1px solid #9dcafc;}
+.page a.h_l,.page a.h_l:hover{width:45px; background-position:0 -26px; border:none; height:22px; overflow:hidden;padding-top:3px;margin-top:-1px;}
+.page a.curpage,.page a.curpage:hover{background:#cbe5ff; border:1px solid #9dcafc; color:#333;}
+.page a.pre,.page a.pre:hover,.page a.preno,.page a.preno:hover{background-position:0 0; border:none; width:60px; height:22px; overflow:hidden;padding-top:2px;text-align:center;padding-left:10px;}
+.page a.preno,.page a.preno:hover{background-position:0 -49px;}
+.page a.next,.page a.next:hover,.page_top a.nextno,.page_top a.nextno:hover,.page a.nextno,.page a.nextno:hover{background-position:7px -55px; border:none; width:77px; height:22px;text-align:center; padding-top:2px; margin-left:-10px;}
+.page_top a.nextno,.page_top a.nextno:hover,.page a.nextno,.page a.nextno:hover{background-position:0 0; color:#999;}
+.page span.sele_page{width:62px; border:1px solid #e5e5e5; height:20px; display:inline-block; vertical-align:middle; overflow:hidden; margin-right:4px;}
+.page span.sele_page input.num{width:40px; border:none; border:0\9; height:20px; color:#999;}
+.page span.sele_page input.btn{width:22px; height:20px; background-position:-55px -50px; border:none; font-family:Tahoma, Geneva, sans-serif; color:#0F3F94; cursor:pointer;line-height: 16px;padding: 0 0 6px 2px;}
+.tishi{
+   display:none;
+   width:76%;  
+   height:75px; 
+   position:absolute;  
+   left:50%;  
+   top:50%; 
+   background:#FFFFFF;
+   border-radius:10px; 
+   margin:-50px 0 0 -38%;
+} 

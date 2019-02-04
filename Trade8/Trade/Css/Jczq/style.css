@@ -1,0 +1,442 @@
+
+        .lot_open{
+            position: relative;
+            padding: 0 10px;
+            line-height: 35px;
+            border-top: 1px solid #eee;
+			font-size:14px;
+			font-weight:bold;
+            /*background: #f0f0f0;*/
+        }
+        .lot_open span{
+            position: absolute;
+            right: 15px;
+            top: 9px;
+            height: 15px;
+            line-height: 15px;
+            width: 15px;
+            font-size: 12px;
+            color: #eee;
+            border-radius: 2px;
+            border: 1px solid #f88;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+            /*background-image: url(sanj1.gif);
+            background-position: center center;
+            background-repeat: no-repeat;*/
+            background-color: #e8291d;
+            -webkit-transition: all .50s ease-in-out;
+            transition: all .50s ease-in-out;
+            z-index: 9;
+        }
+        .lot_open span:before{
+            position:absolute;
+            top: 0px;
+            left: -4px;
+            width: 10px;
+            height: 15px;
+            content: "";
+            background-color: #e8291d;
+            z-index: 11;
+        }
+        .lot_open span:after{
+            position:absolute;
+            top: 4px;
+            left: 2px;
+            width: 7px;
+            height: 7px;
+            content: "";
+            background: #fff;
+            transform: rotate(45deg);
+            z-index: 10;
+        }
+        .lot_context{
+            height: 36px;
+            overflow: hidden;
+            webkit-transition: all .50s ease-in-out;
+            transition: all .50s ease-in-out;
+        }
+        .lot_title{
+            position: relative;
+            text-align: center;
+            line-height: 30px;
+            border-top: 1px solid #eee;
+            background: #f5f5f5;
+        }
+        .lot_title .lot_week{
+            position: absolute;
+            left: 15px;
+        }
+        .lot_text{
+            padding: 5px;
+        }
+        .lot_text span{
+            display: inline-block;
+            margin: 2px;
+            padding: 0 10px;
+            line-height: 25px;
+            border-radius: 2px;
+            color: #fff;
+            font-size:12px;
+            background: #ffd200;
+        }
+        .lot_text .sheng{
+            background: #ba2636;
+        }
+        .lot_text .ping{
+            background: #2e9dd7;
+        }
+        .lot_text .fu{
+            background: #090;
+        }
+        .lot_nav{
+            border-top: 1px solid #eee;
+            overflow: hidden;
+        }
+        .lot_money{
+            color: #f22;
+        }
+        .lot_user{
+            display: inline-block;
+			margin-left:15px;
+            line-height: 30px;
+            text-align: left;
+            box-sizing:border-box;
+        }
+        .lot_user .fontcss1{
+			color:#999999;
+        }
+        .lot_user .fontcss2{
+			font-weight:bold;
+        }
+		.mleft{
+			margin-left:110px;
+		}
+        .process{
+            margin-left: 20px;
+            display: block;     
+        }
+        .lot_pol{
+            float: left;
+            width: 80px;
+        }
+        .lot_state{
+            position: relative;
+            margin: 20px 120px;
+            line-height: 40px;
+            font-size: 18px;
+            font-weight: 700;
+            border-left: 1px solid #eee;
+            border-right: 1px solid #eee;
+        }
+        .lot_overtime{
+            padding: 10px 0;
+            width: 120px;
+            float: right;
+            line-height: 30px;
+        }
+        .lot_date{
+            font-size: 12px;
+            color: #59f;
+            font-weight: 800;
+        }
+        .lot_tc{
+            float: left;
+            width: 120px;
+        }
+        .lot_HM_Buy{
+            padding: 5px;
+            line-height: 25px;
+        }
+        .lot_HM_input{
+            display: block;
+            margin-left: 120px;
+        }
+        .lot_gd_input input{
+            padding: 0;
+            display: inline-block;
+            line-height: 25px;
+            width: 40px;
+            text-align: center;
+            border-radius: 2px;
+            border: 1px solid #ddd;
+        }
+        .lot_gd_input button{
+            padding: 0 10px;
+            margin-left: 5px;
+            border-radius: 2px;
+            line-height: 40px;
+            box-sizing:border-box;
+            background: #66ccff;
+            color: #fff;
+            border: 1px solid #66ccff;
+			float:right;
+        }
+		.btn{display:block; height:32px; line-height:32px; text-align:center; font-size:16px;  border-radius:5px; color:#fff; border:1px solid #da2d23; background:#f2372b; box-shadow:0 1px 1px #f98b84 inset;}
+        .lot_all_user{
+            /*font-size: 12px;*/
+			margin:0 10px;
+            border-bottom: 1px solid #eee;
+			line-height:40px;
+        }
+        .lot_all_user_title{
+            line-height: 30px;
+            border-top: 1px solid #eee;
+            background: #f5f5f5;
+        }
+        .lot_all_user_list{
+            line-height: 25px;
+            color: #999;
+        }
+        .lot_all_user_title span, .lot_all_user_list span{
+            display: inline-block;
+            text-align: center; 
+            width: 25%;
+        }
+        .lot_all_user_title span:first-child, .lot_all_user_list span:first-child{
+            width: 25%;
+        }
+        .lot_kj_title span{
+            display: inline-block;
+            text-align: center;
+			padding:10px 0;
+			color:#666666;
+            width: 36%;
+        }
+        .lot_kj_title .span1{
+            width: 25%;
+        }
+        .lot_kj_title .span2{
+            width: 17%;
+        }
+        .lot_over_title{
+            padding: 0;
+            margin-bottom: 1px;
+        }
+        .lot_over_title span{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            width: 20%;
+            border-radius: 0;
+            color: #222;
+            line-height: 30px;
+            border-top: 1px solid #eee;
+            background: #f5f5f5;
+        }
+        .lot_over span{
+            margin: 0 1%;
+            padding: 0;
+            text-align: center;
+            width: 18%;
+        }
+        .lot_bd{
+            position: absolute;
+            width: 100%;
+            margin-top: -25px;
+            font-size: 12px;
+        }
+        .lot_bd span{
+            color: #ba2636;
+        }
+        .lot_all_user_out{
+            max-height: 250px;
+            overflow: auto;
+        }
+        
+.k_tc{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 40%;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    background: rgba(255,255,255,0.2);
+}
+.k_tc .k_tco{
+    position:absolute;
+    bottom: 0.95rem;
+    left: 10%;
+    
+    border-radius:10px;
+    width: 80%;
+    text-align: center;
+    z-index:10;
+    background:#ffffff;
+}
+.k_tc .k_tco .k_tcbf{
+    height:.1rem;
+    border-radius:.05rem;
+}
+.k_tch{
+    position:absolute;
+    /*top:-.95rem;*/
+    left:0;
+    width:2rem;
+    height:2rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.725rem;
+    border-radius: 1rem;
+    background:#f66;
+    z-index:11;
+}
+
+.hm-nav span{
+    display: inline-block;
+}
+.hm-nav span:nth-child(1){
+    width: 22.5%;
+}
+.hm-nav span:nth-child(2){
+    width: 40%;
+}
+.hm-nav span:nth-child(3){
+    width: 22.5%;
+}
+.hm-input{
+    text-align: center;
+    border-radius: 0.5rem;
+    width: 22.5%;
+    height: 2rem;
+    line-height: 2rem;
+    background: #fff4da;
+    border: 0; 
+}
+.KR_window{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #333;
+    background: rgba(0,0,0,0.4);
+    z-index: 1000;
+}
+.KR_window_body{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*border: 4px solid #333;
+    border-radius: 5px;*/
+    background: #fff;
+}
+.KR_window_top{
+    overflow: hidden;
+    background: #ba142b;
+    height: 3.66rem;
+    color: #fff;
+    position: relative;
+    z-index: 12;
+    text-align: center;
+    border: 0;
+}
+.KR_window_top .KR_window_title{
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #333;
+}
+.KR_window_top .KR_window_title h1{
+    position: relative;
+    z-index: 11;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 3.66rem;
+    color: #fff;
+    height: 3.66rem;
+}
+.KR_window_top .KR_window_title .reg{
+    position: absolute;
+    width: 3.66rem;
+    height: 100%;
+    line-height: 3.66rem;
+    color:#FFF;
+    font-size: 1.16rem;
+    font-weight: 400;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 11;
+}
+.KR_window_top .KR_window_close{
+    left: 0;
+    padding-left: 2.5rem;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAoCAYAAAAR87HlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACCSURBVEhLY2CgEvj//z8PECdQyTgGBpCB//79Owyk/wPpfIoNRjPwIdBQRYoMHTVwNAzJSECjyWY02QzLZAPyFLBQTYaW2JTHMiyUkAy9BzRcjozQw9SClg2HnsEPaRUUowbDWx2jQTEaFMCiA73KHs15sGb50MsgRVSpPUCGIHd5AEecoEnVscx7AAAAAElFTkSuQmCC) .875rem center no-repeat;
+    background-size: .875rem;
+
+
+    position: absolute;
+    top: 27%;
+    z-index: 500;
+    height: 50%;
+    font-size: 1.16rem;
+    line-height: 1.5em;
+}
+.KR_window_top .KR_window_close:hover{
+    background-position: -12px -136px;
+}
+.kr_login_box{
+    padding: .83rem;
+}
+.kr_login_box dl{border-width: 0;}
+.kr_login_box dl dd{position: relative;height: 3.66rem;border: 1px solid #ccc;border-top-width: 0;line-height: 3.66rem;}
+.kr_login_box dl dd:first-child{border-top-width: 1px;}
+.kr_login_box dl dd label{
+    display: block;
+    padding-left: .83rem;
+    width: 3.75rem;
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    color: #666;
+    font-size: 1.16rem;
+}
+
+.kr_login_box .inputWrap{
+    margin-left: 5rem;
+    height: 100%;
+}
+.kr_login_box .inputWrap input{
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+.yzm{
+    position: relative;
+}
+.ver_code{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4.75rem;
+}
+.ver_code img{
+    width: 100%;
+    height: 100%;
+}
+.login_box_btn .btn-buttom, .login_box_btn .btn-reg{
+    line-height: 3.66rem;
+}
+.login_box_btn .btn-buttom{
+    display: block;
+    font-size: 1.33rem;
+    margin: .83rem 0;
+    line-height: 3.25rem;
+    background-color: #b01e35;
+    border: 1px solid #c0415f;
+    -webkit-border-radius: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}

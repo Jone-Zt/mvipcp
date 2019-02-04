@@ -1,0 +1,74 @@
+#######################################################################
+# <%=Setting(0)%>门户网站管理系统 KRCMS Lottery Portal V2011 SP2  　  　     #
+# 当前版本：V2012.06.15               	                              #
+# 版权所有: 1网络(KRCMS.COM)                                       #
+#######################################################################
+# KRCMS Ssc Sales V2013                                               #
+# Copyright 2002-2013 www.kurei.cn .All Rights Reserved.              #
+#######################################################################
+#【版权声明】                                                         #
+# 本软体为共享软体(shareware)提供个人网站免费使用。                   #
+# 非1网络官方授权许可，不得将之用于盈利或非盈利性的商业用途。      #
+# 为适应实际的计算机应用环境或者改进其功能、性能，可以进行必要的修改  #
+# 但不得去除1网络的版权标识，不得将修改后版本进行任何的商业行为。  #
+# 本软体为免费软件，用户自由选择是否使用，在使用中出现任何问题而造成  #
+# 的损失1网络不负任何责任。                                        #
+#######################################################################
+
+[ISAPI_Rewrite]
+# 3600 = 1 hour 
+CacheClockRate 3600
+RepeatLimit 32
+# Protect httpd.ini and httpd.parse.errors files 
+# from accessing through HTTP
+
+#关于我们
+RewriteRule /AboutUs/ /Plus/AboutUs/index\.asp\?id=6 [N,I]
+RewriteRule /AboutUs/index.html /Plus/AboutUs/index\.asp\?id=6 [N,I]
+RewriteRule /AboutUs/(.*).html /Plus/AboutUs/index\.asp\?id=$1 [N,I]
+
+#中奖查询
+RewriteRule /ZhongJiang/ /Plus/ZhongJiang/index.asp [N,I]
+RewriteRule /ZhongJiang/(.*).html /Plus/ZhongJiang/$1.asp [N,I]
+
+#网站公告
+RewriteRule /Announce/ /Plus/Announce/index.asp [N,I]
+RewriteRule /Announce/index.html /Plus/Announce/index.asp [N,I]
+RewriteRule /Announce/index\-(.*).html /Plus/Announce/index\.asp\?page=$1 [N,I]
+RewriteRule /Announce/List\-(.*).html /Plus/Announce/\?page=$1 [N,I]
+RewriteRule /Announce/thread\-(.*).html /Plus/Announce/View\.asp\?id=$1 [N,I]
+RewriteRule /KaiJiang/(.*)-(.*) /kaijiang/$1\.asp\?page=$2 [N,I]
+
+#文章系统
+RewriteRule /News/ /Plus/News/index.asp [N,I]
+RewriteRule /News/index.html /Plus/News/index.asp [N,I]
+RewriteRule /News/index\-(.*).html /Plus/News/index\.asp\?page=$1 [N,I]
+RewriteRule /News/List\-(.*).html /Plus/News/List\.asp\?ClassID=$1 [N,I]
+RewriteRule /News/List\-(.*)-(.*).html /Plus/News/List\.asp\?ClassID=$1&page=$2 [N,I]
+RewriteRule /News/thread\-(.*).html /Plus/News/View\.asp\?id=$1 [N,I]
+
+#帮助中心
+RewriteRule /Help/ /Plus/Help/index.asp [N,I]
+RewriteRule /Help/index.html /Plus/Help/index.asp [N,I]
+RewriteRule /Help/List\-(.*).html /Plus/Help/List\.asp\?ClassID=$1 [N,I]
+RewriteRule /Help/thread\-(.*).html /Plus/Help/View\.asp\?id=$1 [N,I]
+RewriteRule /Help/Agreement.html /User/Agreement.asp [N,I]
+
+RewriteRule /User/Question-(.*)-(.*)-(.*) /Trade/Question\.asp\?action=$1&$2=$3 [N,I]
+RewriteRule /Trade/Hemai-Lotid-(.*) /Trade/Hemai\.asp\?lotid=$1 [N,I]
+RewriteRule /User/Agent-(.*)\.html /User/Agent\.asp\?action=$1 [N,I]
+RewriteRule /Trade/(.*)/Project_Info-(.*) /Trade/$1/Project_Info\.asp\?id=$2 [N,I]
+
+RewriteRule /(.*)/(.*)-(.*).html /$1/$2.asp\?action=$3 [N,I]
+RewriteRule /(.*)/(.*)-(.*).html\?(.*)=(.*) /$1/$2.asp\?action=$3&$4=$5 [N,I]
+RewriteRule /(.*)/(.*)-(.*)-(.*).html /$1/$2.asp\?action=$3-$4 [N,I]
+RewriteRule /(.*)/(.*)-(.*).html\?(.*)=(.*) /$1/$2.asp\?action=$3&$4=$5 [N,I]
+
+全站通用
+RewriteRule /(.*).html /$1.asp [N,I]
+RewriteRule /(.*)/(.*).html /$1/$2.asp [N,I]
+RewriteRule /(.*)/(.*)/(.*).html /$1/$2/$3.asp [N,I]
+RewriteRule /(.*)/(.*).html\?(.*)=(.*) /$1/$2.asp\?$3=$4 [N,I]
+RewriteRule /(.*)/(.*).html\?(.*)=(.*)&(.*)=(.*) /$1/$2.asp\?$3=$4&$5=$6 [N,I]
+RewriteRule /(.*)/(.*).html\?(.*)=(.*)&(.*)=(.*)&(.*)=(.*) /$1/$2.asp\?$3=$4&$5=$6&$7=$8 [N,I]
+RewriteRule /(.*)/(.*).html\?(.*)=(.*)&(.*)=(.*)&(.*)=(.*)&(.*)=(.*)&(.*)=(.*)&(.*)=(.*) /$1/$2\.asp\?$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [N,I]
